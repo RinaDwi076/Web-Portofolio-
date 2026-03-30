@@ -1,0 +1,217 @@
+/* =============================================
+   MOBILE VIEW ONLY (Max-width: 768px)
+   ============================================= */
+
+/* ---- Typography & Global ---- */
+.container {
+    padding: 0 1.2rem;
+}
+
+.section {
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: clamp(1.8rem, 8vw, 2.2rem) !important; 
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-title span::after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+}
+
+/* ---- Navbar Mobile ---- */
+.navbar {
+    padding: 0.8rem 1.2rem;
+}
+
+.nav-links {
+    display: none; 
+    position: fixed;
+    top: 65px;
+    left: 0;
+    right: 0;
+    background: rgba(10, 15, 30, 0.98);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    padding: 2.5rem;
+    gap: 1.5rem;
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+}
+
+.nav-links.open {
+    display: flex;
+}
+
+.hamburger {
+    display: flex;
+}
+
+/* ---- Hero Section ---- */
+.hero {
+    padding-top: 100px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    flex-direction: column-reverse; 
+    text-align: center;
+    gap: 2rem;
+}
+
+.hero-image-wrap {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    width: 100%;
+}
+
+.hero-roles {
+    justify-content: center;
+}
+
+.hero-tagline {
+    border-left: none;
+    border-top: 3px solid var(--violet);
+    padding: 1rem 0 0 0;
+    text-align: center;
+    max-width: 280px;
+    margin: 0 auto 2rem;
+}
+
+.hero-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+    margin-bottom: 5rem; /* Memberi ruang agar tidak menabrak Scroll Down */
+}
+
+.btn {
+    width: 100%; 
+    justify-content: center;
+}
+
+.hero-scroll-hint {
+    bottom: 1.5rem;
+    font-size: 0.65rem;
+}
+
+/* ---- About Section ---- */
+.about-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 2.5rem;
+}
+
+.about-avatar-wrap {
+    width: 180px;
+    height: 220px;
+    margin: 0 auto;
+}
+
+.about-stats {
+    display: grid;
+    grid-template-columns: 1fr; /* Statistik tumpuk ke bawah */
+    gap: 1rem;
+    padding: 1.2rem;
+}
+
+.about-badges {
+    justify-content: center;
+}
+
+/* ---- Skills Section ---- */
+.skills-grid {
+    grid-template-columns: 1fr;
+}
+
+.skills-col {
+    padding: 1.5rem;
+}
+
+/* ---- Projects Section ---- */
+.projects-grid {
+    grid-template-columns: 1fr;
+}
+
+.project-img-wrap {
+    height: 180px; /* Tinggi gambar dikurangi di HP */
+}
+
+.project-category {
+    font-size: 0.6rem !important; 
+    padding: 0.25rem 0.6rem !important;
+}
+
+.project-github-hint {
+    font-size: 0.65rem !important;
+    padding: 0.25rem 0.6rem !important;
+}
+
+.project-info {
+    padding: 1.1rem;
+}
+
+.project-info h3 {
+    font-size: 0.95rem !important;
+    margin-bottom: 0.4rem;
+}
+
+.project-info p {
+    font-size: 0.78rem !important;
+    line-height: 1.5;
+}
+
+.project-tech span {
+    font-size: 0.65rem !important;
+}
+
+.project-btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 0.8rem !important;
+    padding: 0.6rem;
+}
+
+/* ---- Certificates Section ---- */
+.cert-grid {
+    grid-template-columns: 1fr 1fr; /* Tetap 2 kolom kecil di HP agar tidak terlalu panjang */
+    gap: 0.8rem;
+}
+
+.cert-card img {
+    height: 110px;
+}
+
+.cert-label {
+    font-size: 0.65rem;
+    padding: 0.5rem;
+}
+
+/* ---- Contact Section ---- */
+.contact-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.contact-btn {
+    width: 100%;
+    max-width: 280px;
+    justify-content: center;
+}
+
+/* ---- Footer ---- */
+.footer {
+    padding: 1.5rem;
+    font-size: 0.75rem;
+}
